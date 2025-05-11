@@ -80,13 +80,13 @@ xelatex vocab_comparison.tex
 
 ```latex
 \section*{start-commence}
-egin{multicols}{2}
-\subsection*{	extbf{start} \quad /stɑːrt/}
-egin{itemize}
+\begin{multicols}{2}
+\subsection*{\textbf{start} \quad /stɑːrt/}
+\begin{itemize}
 \item[vt.vi.] 开始；发动；开办；以…起家
 \end{itemize}
-	extbf{例句：}
-egin{itemize}
+\textbf{例句：}
+\begin{itemize}
 \item The meeting started at 9 a.m.
 \end{itemize}
 ...[README.md](README.md)
