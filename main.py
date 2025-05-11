@@ -1,17 +1,17 @@
+import pickle
 import pandas as pd
 from openai import OpenAI
 import json
 import os
 
 
-DEEPSEEK = 1
+DEEPSEEK: bool = True
 
 
 file_path = 'data.xlsx'
 df = pd.read_excel(file_path, header=None)
 data_list = df.values.tolist()
 print("单词组数量：", len(data_list))
-
 latex = [
         r"\documentclass[12pt]{article}",
         r"\usepackage[UTF8]{ctex}",
@@ -22,11 +22,11 @@ latex = [
         r"\usepackage{xcolor}",
         r"\usepackage{titlesec}",
         r"\usepackage{multicol}",
+        r"\usepackage{fontspec}",
+        r"\setmainfont{Charis SIL}",
         r"\titleformat{\section}{\large\bfseries\color{blue}}{}{0em}{}",
         r"\titleformat{\subsection}{\normalsize\bfseries\color{black}}{}{0em}{}",
-        r"\begin{document}",
-        r"\usepackage{fontspec}",
-        r"\setmainfont{Charis SIL}"
+        r"\begin{document}"
     ]
 
 if DEEPSEEK:
@@ -34,7 +34,7 @@ if DEEPSEEK:
     os.makedirs("json_file", exist_ok=True)
 
     # deepseek设置
-    token = "YOUR-TOKEN"
+    token = "sk-c796bd521b9141c3a819b9aef1f356da"
     client = OpenAI(
         api_key=token,
         base_url="https://api.deepseek.com",
@@ -70,7 +70,8 @@ if DEEPSEEK:
         # 发送请求
         user_prompt = " "
         for word in group:
-            user_prompt += word + ","
+            if not pd.isna(word):
+                user_prompt += word + ","
         print("用户请求：" ,user_prompt[:-1])
         messages = [{"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}]
