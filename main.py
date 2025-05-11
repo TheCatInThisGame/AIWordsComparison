@@ -34,7 +34,7 @@ if DEEPSEEK:
     os.makedirs("json_file", exist_ok=True)
 
     # deepseek设置
-    token = "sk-c796bd521b9141c3a819b9aef1f356da"
+    token = "YOUR-TOKEN"
     client = OpenAI(
         api_key=token,
         base_url="https://api.deepseek.com",
