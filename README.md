@@ -92,7 +92,7 @@ xelatex vocab_comparison.tex
 ...[README.md](README.md)
 \end{multicols}
 ```
-
+![生成的pdf示意](img.png)
 ---
 
 ## 📜 License
