@@ -13,6 +13,7 @@
 - ✅ 自动生成含有多栏词汇解释与词义比较的 LaTeX 文档；
 - ✅ 支持音标、中文释义、例句、对比维度；
 - ✅ 可批量处理 Excel 中的所有词组。
+- 🙋‍♂️ 作者本人整理完data后将上传，预计在2025/6/14 CET6考完后。
 
 ---
 
@@ -79,13 +80,13 @@ xelatex vocab_comparison.tex
 
 ```latex
 \section*{start-commence}
-egin{multicols}{2}
-\subsection*{	extbf{start} \quad /stɑːrt/}
-egin{itemize}
+\begin{multicols}{2}
+\subsection*{\textbf{start} \quad /stɑːrt/}
+\begin{itemize}
 \item[vt.vi.] 开始；发动；开办；以…起家
 \end{itemize}
-	extbf{例句：}
-egin{itemize}
+\textbf{例句：}
+\begin{itemize}
 \item The meeting started at 9 a.m.
 \end{itemize}
 ...[README.md](README.md)
