@@ -1,0 +1,39 @@
+{
+    "swell": {
+        "pronunciation": "/swɛl/",
+        "meaning": {
+            "vt.vi.": "膨胀；肿胀；增加",
+            "vi.": "情感等)高涨",
+            "n.": "肿胀；浪涛"
+        },
+        "sentence": [
+            "The river began to swell after the heavy rain.",
+            "Her ankle started to swell after the fall."
+        ]
+    },
+    "increase": {
+        "pronunciation": "/ɪnˈkriːs/",
+        "meaning": {
+            "vt.vi.": "增加；增长；提高",
+            "n.": "增加；增长；提高"
+        },
+        "sentence": [
+            "The company plans to increase its workforce next year.",
+            "There has been a significant increase in the number of students."
+        ]
+    },
+    "_difference_": {
+        "语体风格不同": {
+            "swell": "常用于描述体积、大小的增加，尤其是由于内部压力或液体增加导致的膨胀。",
+            "increase": "通用词，适用于各种增加、增长的情境，包括数量、大小、程度等。"
+        },
+        "使用场景不同": {
+            "swell": "多用于描述具体物体的膨胀或情感的增强。",
+            "increase": "广泛用于经济、统计、数量等方面的增长。"
+        },
+        "情感色彩不同": {
+            "swell": "有时带有消极含义，如肿胀、膨胀。",
+            "increase": "中性词，无特定情感色彩。"
+        }
+    }
+}

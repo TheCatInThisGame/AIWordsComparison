@@ -1,0 +1,33 @@
+{
+    "deny": {
+        "pronunciation": "/dɪˈnaɪ/",
+        "meaning": {
+            "vt.": "否认；拒绝给予；拒绝…的要求",
+            "vi.": "否认；拒绝"
+        },
+        "sentence": [
+            "He denied the allegations against him.",
+            "She was denied access to the building."
+        ]
+    },
+    "refute": {
+        "pronunciation": "/rɪˈfjuːt/",
+        "meaning": {
+            "vt.": "驳斥；反驳；驳倒"
+        },
+        "sentence": [
+            "The scientist refuted the theory with new evidence.",
+            "He refuted his opponent's argument in the debate."
+        ]
+    },
+    "_difference_": {
+        "含义不同": {
+            "deny": "主要表示否认某事的存在或真实性，或拒绝给予某物。",
+            "refute": "指通过提供证据或论据来证明某观点或陈述是错误的。"
+        },
+        "使用场景不同": {
+            "deny": "常用于法律、日常对话中，表示否认指控或拒绝请求。",
+            "refute": "更多用于学术、科学或正式辩论中，表示通过证据反驳。"
+        }
+    }
+}
